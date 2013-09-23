@@ -170,6 +170,7 @@ public class PlayActivity extends Activity {
         	else if(A==4){
         		message = "\nCongratulations, you win! The ans is: " + ans + ".";
         		textView.append(message);
+        		trialNum = 0;
         	}
         	else{
         		message = "\nYou have " + trialNum + " trials remaining! The hint " +
