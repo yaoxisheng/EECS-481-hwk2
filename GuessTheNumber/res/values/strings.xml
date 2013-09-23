@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess the number</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="button_play">Play</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_play">Play</string>
+    <string name="game_intro">
+        This game simply asks you to guess a four-unique-digit number within 10 trials.
+        Every time you enter a number, a hint like XAXB will be returned to you.
+        0A1B means you have one number correct but in wrong place. 1A0B means you
+        have one number correct as well as in the correct place. It\'s easy so enjoy
+        it!
+    </string>
+    <string name="greeting">Hello! Let\'s start the game!</string>
+    <string name="enter_number">Please enter a four-digit number</string>
+    <string name="button_enter">Enter</string>
+    <string name="hint">You have 10 trials remaining!</string>
+</resources>

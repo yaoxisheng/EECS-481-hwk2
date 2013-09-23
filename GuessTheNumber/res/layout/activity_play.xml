@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".PlayActivity" >
+    <TextView
+        android:id="@+id/greeting"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/greeting" />
+    <EditText
+        android:id="@+id/enter_number"
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@id/greeting"
+       	android:inputType="number"
+       	android:hint="@string/enter_number" />
+    <Button
+        android:id="@+id/button_enter"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@id/greeting"
+       	android:layout_toRightOf="@id/enter_number"       	       	       	
+       	android:text="@string/button_enter" />
+    <TextView
+        android:id="@+id/hint"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/button_enter" 
+        android:textSize="20sp"
+        android:text="@string/hint" />    
+</RelativeLayout>
