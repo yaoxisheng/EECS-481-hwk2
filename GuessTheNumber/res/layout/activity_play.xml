@@ -30,7 +30,7 @@
         android:id="@+id/hint"        
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"        
-        android:layout_below="@id/button_enter" 
+        android:layout_below="@id/enter_number"
         android:textSize="20sp"
         android:text="@string/hint" />    
 </RelativeLayout>

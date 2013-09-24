@@ -123,12 +123,11 @@ public class PlayActivity extends Activity {
         	TextView textView = (TextView) findViewById(R.id.hint);
         	if(userAnsVal<1000 || userAnsVal>9999){        		
         		if(trialNum!=0){
-        			message = "\nYou have " + trialNum + " trials remaining!" +
-      				          " You should enter a number between 1000 and 9999" +
-        					  " with four unique digits!";
+        			message = trialNum + " trials remaining! You should enter a " +
+        					  "number between 1000 and 9999 with four unique digits!\n\n";
         		}
         		else{
-        			message = "\nYou have no trial remaining! Game over...";
+        			message = "No trial remaining! Game over...\n\n";
         		}
         		textView.append(message);
         		return;
@@ -138,12 +137,11 @@ public class PlayActivity extends Activity {
         			for(int j=i+1;j<4;j++){
         				if(userAnsArray[i]==userAnsArray[j]){
         					if(trialNum!=0){
-        						message = "\nYou have " + trialNum + " trials remaining!" +
-        	      				          " You should enter a number between 1000 and 9999" +
-        	        					  " with four unique digits!";
+        	        			message = trialNum + " trials remaining! You should enter a " +
+        	        					  "number between 1000 and 9999 with four unique digits!\n\n";
         					}
         					else{
-        						message = "\nYou have no trial remaining! Game over...";
+        	        			message = "No trial remaining! Game over...\n\n";
         					}        					
         					textView.append(message);
         	        		return;
@@ -164,18 +162,17 @@ public class PlayActivity extends Activity {
         		}
         	}
         	if(trialNum==0 && A!=4){
-        		message = "\nYou have no trial remaining! Game over...";
+    			message = "No trial remaining! Game over...\n\n";
         		textView.append(message);
         	}
         	else if(A==4){
-        		message = "\nCongratulations, you win! The ans is: " + ans + ".";
+        		message = "Congratulations, you win! The ans is: " + ans + ".\n\n";
         		textView.append(message);
         		trialNum = 0;
         	}
         	else{
-        		message = "\nYou have " + trialNum + " trials remaining! The hint " +
-        				  "is: " + A + "A" + B + "B. The number you entered is: " + 
-        				  userAns + ".";
+        		message = trialNum + " trials remaining! Hint: " + A + "A" + B +
+        				  "B. You input: " +  userAns + ".\n\n";
         		textView.append(message);
         	}
 		}        	

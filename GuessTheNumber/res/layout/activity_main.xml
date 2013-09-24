@@ -4,25 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
-    <TextView
-        android:id="@+id/game_intro"
-        android:layout_width="640dp"
-        android:layout_height="wrap_content"     
-        android:textSize="20sp"
-        android:text="@string/game_intro" />
-    <EditText
-        android:id="@+id/enter_name"
-        android:layout_width="320dp"
-       	android:layout_height="wrap_content"
-       	android:layout_toRightOf="@id/game_intro"       	
-       	android:hint="@string/enter_name" />
+    android:paddingRight="16dp"
+    android:background="@drawable/background" >
     <Button
         android:id="@+id/button_play"
        	android:layout_width="wrap_content"
        	android:layout_height="wrap_content"
-       	android:layout_toRightOf="@id/game_intro"
-       	android:layout_below="@id/enter_name"       	       	
-       	android:text="@string/button_play"        	
+       	android:layout_centerInParent="true"
+       	android:text="@string/button_play"       	
        	android:onClick="startPlay" />    
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="320dp"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@id/button_play"
+       	android:layout_centerHorizontal="true"     	
+       	android:hint="@string/enter_name" />    
 </RelativeLayout>
